@@ -2,9 +2,9 @@
 
 After using Visual studio enterprise (VS) and Resharper (R#), a while, following design patterns such as **MVVM**, **DI**, we might want to have a more precise overview of the application being developed. But not Visual studio enterprise nor Resharper can give any significant, relevant view on the code and what it does, and how well, how ideas are organized, etc.
 
-I often have the practice of having everything in mind and then I write code: I have the global ideas and architecture in mind as I code and craft my local ideas. With this project, I needed some time to just have the global feeling back (yes, you can say I was not able to read my code). Hum. not that good, but I have no means to know if it was me or my implementation.
-
 I have a medium-big progam involving both **computer vision** and **realtime image/video editing**; it involves c#, c++, matlab, MKL, cuda code, but most of it is **c#**; it has about 10k LOCs, has a computing part and a graphical user interface (GUI) part, it has **MVVM** pattern, and uses **Prism** and **Unity** for **DI** patterns; it has unit tests, even though it's not **TDD**; it has metrics for performance measurements in many critical places.
+
+I often have the practice of having everything in mind and then I write code: I have the global ideas and architecture in mind as I code and craft my local ideas. With this project, I needed some time to just have the global feeling back (yes, you can say I was not able to read my code). Hum. Not that good, but I have no means to know if it was me or my implementation.
 
 I have a quite big **ViewModel** class, which is classical, with implementation in several files (partial public class), for different aspects.
 
@@ -14,7 +14,9 @@ Question: is it a code smell despite I'm following the MVVM pattern ?
 
 Here comes the necessity of Ndepend as static code analyser to understand better differents aspects of the program, and have quite specific requests about the code.
 
-Ndepend is quite rich and has many already implemented **rules**, **quality gates**, **issues**. Those rules are totally transparent, they can be changed, and we can implement new ones. In version 2017.2 there was many "false positives", and it was corrected in 2017.3, but actually all those metrics, thresholds are kind of personnal and depend on your style, organization needs, and so on.
+Ndepend is quite rich and has many already implemented **rules**, **quality gates**, and **issues**. Those rules are totally transparent: they are open source, they are commented and explained, they can be changed, eg., to match our interpretation of **too big**, and _we can implement new ones_ !
+
+ In version 2017.2 there was many "false positives", and it was corrected in 2017.3, but actually all those metrics, thresholds are kind of personnal and depend on your style, organization needs, and so on.
 
 ## How does Ndepend work ? The power of linq into static analysis.
 
@@ -24,7 +26,7 @@ Ndepend is totally transparent about the requests (rules, quality gates and issu
 
 Let's have here an example, a code smell rule called "avoid types with too many methods": ![linq rules][linqrules]
 
-[linqrules] https://github.com/mprevot/ReviewNdepend/commits/master/images/linqrules.jpg "linq rule example"
+[linqrules] :https://github.com/mprevot/ReviewNdepend/tree/master/images/linqrules.jpg "linq rule example"
 
 ## The analysis power of Ndepend.
 
