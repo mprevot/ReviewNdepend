@@ -26,7 +26,7 @@ Ndepend is totally transparent about the requests (rules, quality gates and issu
 
 Let's have here an example, a code smell rule called "avoid types with too many methods": ![linq rules][linqrules]
 
-[linqrules] :https://github.com/mprevot/ReviewNdepend/tree/master/images/linqrules.jpg "linq rule example"
+[linqrules]: https://github.com/mprevot/ReviewNdepend/tree/master/images/linqrules.jpg "linq rule example"
 
 ## The analysis power of Ndepend.
 
