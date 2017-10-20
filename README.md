@@ -24,9 +24,7 @@ c# is an amazing language to read, write and craft, for the sake of the language
 
 Ndepend is totally transparent about the requests (rules, quality gates and issues), which can be modified according to our needs and tastes, which are explained: Ndepend provides **description** of the rule and **how to fix**.
 
-Let's have here an example, a code smell rule called "avoid types with too many methods": ![linq rules][linqrules]
-
-[linqrules]: https://github.com/mprevot/ReviewNdepend/tree/master/images/linqrules.jpg "linq rule example"
+Let's have here an example, a code smell rule called "avoid types with too many methods": ![linq rules](https://github.com/mprevot/ReviewNdepend/tree/master/images/linqrules.jpg "example of a rule in linq")
 
 ## The analysis power of Ndepend.
 
