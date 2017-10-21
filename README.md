@@ -38,6 +38,8 @@ Let's have here an example, a code smell rule called "Avoid types with too many 
 
 One neat thing about the editing of CQLINQ is that there is intellisense for the query AND we got the result of the query being constructed as we type. This is really helpful to craft a rule, since this is definitely an empirical art.
 
+![CQLINQ result as we type](images/CqLinqAsTyped.jpg)
+
 ## The analysis power of Ndepend
 
 
