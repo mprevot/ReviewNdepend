@@ -36,7 +36,7 @@ Let's have here an example, a code smell rule called "Avoid types with too many 
 
 ![linq rules](images/linqrules.jpg "example of a rule in linq")
 
-One neat thing about the editing of CQLINQ is that there is intellisense for the query AND we got the result of the query being constructed as we type. This is really helpful to craft a rule, since this is not theory but .
+One neat thing about the editing of CQLINQ is that there is intellisense for the query AND we got the result of the query being constructed as we type. This is really helpful to craft a rule, since this is definitely an empirical art.
 
 ## The analysis power of Ndepend
 
