@@ -109,7 +109,7 @@ Ndepend can be used outside VS with its own UI, and have a flavour for build mac
 
 The presentations that were the most useful to me were the **rule match tree** (in the previous image: (3)), the **dependency graph** which can be reached directly from the rule match tree:
 
-![Dependency graph, hovering different types](images/DependencyGraph.gif)
+![Dependency graph, hovering different types](images/DependencyGraph8.gif)
 
 where box size and edge thickness can be related to a certain metric such as cyclomatic complexity, LOC, IL LOC, or number of {methods, types, members, fields, ...}.
 
