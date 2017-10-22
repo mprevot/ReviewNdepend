@@ -146,4 +146,4 @@ Having a small set of custom rules, coming from users and Ndepend, might be usef
 
 #### Who am I
 
-I'm theoretical physicist, pure mathematician (graduate student, double major), and software engineer, essentially into research in foundations of mathematics, of artificial intelligence and artificial understanding.
+I'm graduate student, double major in theoretical physics and pure mathematics, and software engineer, essentially into research in foundations of mathematics, of artificial intelligence and artificial understanding.
