@@ -70,6 +70,12 @@ Let's see an example of updated rule as we type:
 
 ![CQLINQ result as we type](images/CQLINQ3crop.gif)
 
+### Adjustments
+
+Some rules can be adjusted, quantitative ones, to match personnal/organization style and needs. Some rules were not actually relevant, at lesst in my case, eg., empty interfaces, which weren't recommended to be used empty: they were asked to be used as concrete contracts; however in my case I use empty interfaces for Prism implementation, empty interfaces which allow some useful abstraction on types, and categories changes, in that case for DI purposes.
+
+I adjusted several rules in Ndepend 2017.2 to match my needs, but the set of selected rules weren't remembered. Which was corrected in the following release, 2017.3.
+
 ## User experience
 
 The user experience is satisfying and perfectible, and improved from 2017.2 to 2017.3. In particular there are context help that can be inspiring.
