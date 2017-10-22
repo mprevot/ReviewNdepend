@@ -76,15 +76,19 @@ Let's see an example of updated rule as we type:
 
 Some rules can be adjusted, quantitative ones, to match personal/organization style and needs. Some rules were not actually relevant, at least in my case, eg., empty interfaces, which weren't recommended to be used empty: they were asked to be used as concrete contracts; however in my case I use empty interfaces for Prism implementation, empty interfaces which allow some useful abstraction on types, and categories changes, in that case for DI purposes.
 
-I adjusted several rules in Ndepend 2017.2 to match my needs, but the set of selected rules weren't remembered. Which was corrected in the following release, 2017.3.
+Another example: I had a method with too high **nesting depth** and **IL LOC** (intermediate language lines of code); actually my code was as good as it could be, ie., as close to the concept in my mind as it could be, and refactoring with functions would make it less readable. In that case, the metrics where interesting but not in the end relevant. This might be seen as a frequent discordance between scientists and software engineers: scientists don't really have the practice to refactor a complex code with functions, this is cumbersome to read at first sight, but when we are in the code (ie., when we have all the underlying ideas connected in mind), it's as good as it can be.
+
+A remark. Actually many open source code are written in the scientist way, especially c code, and sometimes refactoring is not really improving anything.
+
+In the end, I adjusted several rules in Ndepend 2017.2 to match my needs.
 
 ## User experience
 
-The user experience is satisfying and perfectible, and improved from 2017.2 to 2017.3. In particular there is context help that can be inspiring.
+The user experience is satisfying and perfectible, and improved from 2017.2 to 2017.3. I appreciate in particular there is context help that can be inspiring.
 
 Ndepend is not really a plug and play plugin, it requires some learning from the engineer in order to know what can be asked, and how to take advantage of the metrics and their presentations. The library of rules is extensive and a lot can be learnt in terms of the code crafting.
 
-I was definitely not using all the metrics, and a selection might need to be done. I found that (especially with many 2017.2 false positives) actually it might be interesting to be able to share sets of custom rules, depending on style, kind of project, and design requirements, in a market place or something. I'll come back to that later. 
+I was definitely not using all the metrics, and a selection might need to be done. I found that (especially with many 2017.2 false positives) actually it might be interesting to be able to share sets of custom rules, depending on style, kind of project, and design requirements, in a market place or something. I'll come back to that later.
 
 In a nutshell, what is the experience ?
 
@@ -99,6 +103,8 @@ TOTAL: 3 clicks to reach the code from dashboard. Clear, simple, quick, efficien
 
 It is also possible to build analysis and report (html) in 1 click, which is relevant for distant communication. This html report comes with embeded dependency matrix, treemap, abstractness vs. instability and dependency graph.
 
+Ndepend can be used outside VS with its own UI, and have a flavour for build machines.
+
 ## Ndepend for business
 
 Ndepend is an excellent tool for engineers and architects, so they know where we are, and provides human and business metrics, such as technical debt and interest, quoting Ndepend's [doc](https://www.ndepend.com/docs/technical-debt):
@@ -110,31 +116,25 @@ In my case, the actual real time I needed to solve the issues was much smaller t
 
 ## Conclusion
 
+To answer to my inital question, I concluded that my ViewModel class was fine with its many methods, but it would be improved by decoupling even more certain features that deserved to be part of another class, and using a container would be the best design. And I would remove responsabilities from the ViewModel at the same time. There was no way I could see that with only VS and Resharper.
+
 Ndepend is very powerful, very much customizable, and very much lightweight unlike resharper, which is appreciable. The UI has recently improved, though Ndepend requires some time to learn what we need and how to use it, hopefully Ndepend's website is clear and full featured, as well as its Pluralsight formation that I recommend for a quickstart.
 
 Potential of Ndepend is quite huge, and it will require some time and practice to get the best of it.
 
-I believe that the biggest expectable next feature of Ndepend is (guided, semi) automation of code refactoring, which would be an extremely exciting evolution of Ndepend.
+Ndepend's audience is definitely middle-senior, lead, architects, as well as more business close people.
+
+Ndepend is definitely a  companion to-have for serious software engineering.
 
 ## Ideas of future evolution of Ndepend
 
 ### Automation on code refactoring
 
-I would love to be able to ask to Ndepend to (semi-)automatically refactor my code to solve the bad metrics and improve the code. Actually it eventually goes beyond refactoring when the architecture is changed, and refactoring is not supposed to affect the architecture.
-
-The power of Resharper is to be present to the developer as we write the code.
+The one wicked ~~missing~~ coming feature is to be able to ask to Ndepend to (guidedly, semi) automatically refactor my code to solve the bad metrics and improve the code. Actually it eventually goes beyond refactoring when the architecture is changed, since refactoring is not supposed to affect the architecture. In several cases, there is no automation, the engineer need to decide and craft.
 
 ### Real-time local metrics
 
-Let's say I'm working on a specific type or function. I'm might find useful to have real-time updated metrics about my code and its integration with the rest of the project. Hence I would have local metrics about the just written code, in the context of more global metrics. That would be funny, and closer to the writter than to the architect; which make sense since the trend is to have scrum practices and flatter responsibilities and hierarchy.
-
-### More interactivity
-
-The UXUI is a bit clumsy-heavy when it's about navigating among rules. There was definitely improvements with 2017.3, getting closer to the user with guiding messages.
-
-I wish I could remove the sound (or customize it).
-
-I wish my rules were remembered, after restart of VS.
+Or Real-time and local metrics updates. Let's say I'm working on a specific type or function. I'm might find useful to have real-time updated metrics about my code and its integration with the rest of the project. Hence I would have local metrics about the code just written, in the context of more global metrics. That would be funny, and closer to the writter than to the architect; which make sense since the trend is to have scrum practices and flatter responsibilities and hierarchy.
 
 ### Market place of rules and code crafting
 
@@ -144,7 +144,7 @@ There are many existing rules and we can tune them, add new ones indeed. But:
 * rules and sets of rules might depend on style, on project, etc;
 * and depending on the project we might need to adapt them, select them and share our custom set of rules.
 
-Having a small set of custom rules, coming from users and Ndepend, might be useful to have quick start, since Ndepend needs to be learnt before expressing its power.
+Having a small set of custom rules, coming from users and Ndepend, might be useful to have quick start, since Ndepend needs to be learnt in some extends before expressing its power. Not having those and developing a feeling for those comes with experience and *avoir du métier*.
 
 #### Who am I
 
