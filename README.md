@@ -80,6 +80,8 @@ Another example: I had a method with too high **nesting depth** and **IL LOC** (
 
 A remark. Actually many open source code are written in the scientist way, especially c code, and sometimes refactoring is not really improving anything.
 
+When I need a custom rule around a specific piece of code, I can put the [rule inside the code](https://www.ndepend.com/docs/declare-cqlinq-rules-in-csharp-or-vbnet-code).
+
 In the end, I adjusted several rules in Ndepend 2017.2 to match my needs.
 
 ## User experience
@@ -111,11 +113,11 @@ The presentations that were the most useful to me were the **rule match tree** (
 
 where box size and edge thickness can be related to a certain metric such as cyclomatic complexity, LOC, IL LOC, or number of {methods, types, members, fields, ...}.
 
-The **code metrics view** is useful to explore the code metrics, using colors, colored thresholds, box sizes, since it is interactive. For instance I find quickly my monster dummy dirty methods (which could deserve to have several lines in a submethod), and then the following ones:
+The [**code metrics view**](https://www.ndepend.com/docs/treemap-visualization-of-code-metrics#Color) is useful to explore the code metrics, using colors, colored thresholds, box sizes, since it is interactive. For instance I find quickly my monster dummy dirty methods (which could deserve to have several lines in a submethod), and then the following ones:
 
 ![Code metrics view](images/CodeMetricsView.jpg)
 
-
+There are many other possibilities, among which the [dependency matrix](https://www.ndepend.com/docs/dependency-structure-matrix-dsm), for yet another presentation.
 
 ## Ndepend for business
 
@@ -123,6 +125,7 @@ Ndepend is an excellent tool for engineers and architects, so they know where we
 
 * The technical-debt is the estimated man-time that would take to fix the issue.
 * The annual-interest is the estimated man-time consumed per year if the issue is left unfixed. This provides an estimate of the business impact of the issue.
+* the Return On Investment (ROI) of an issue fix (~ debt divided by the annual-interest). This estimation is the breaking-point for which the lower the value, the higher the ROI.
 
 In my case, the actual real time I needed to solve the issues was much smaller than the debt that was presented. Though we can adjust how those are computed I wish there were some semi-automatic way (ie., with simple machine learning or regression) to adjust the computed debt to the code crafter behind.
 
@@ -132,7 +135,9 @@ To answer to my inital question, I concluded that my ViewModel class was fine wi
 
 Ndepend is very powerful, very much customizable, and very much lightweight unlike resharper, which is appreciable. The UI has recently improved, though Ndepend requires some time to learn what we need and how to use it, hopefully Ndepend's website is clear and full featured, as well as its Pluralsight formation that I recommend for a quickstart.
 
-Potential of Ndepend is quite huge, and it will require some time and practice to get the best of it.
+Potential of Ndepend is quite huge, and it will require some time and practice to get the best of it. There is a learning process. And understanding data, creating data from Ndepend, and using it in a relevant way is also part of another learning process, the one of improve ourself as a software engineer.
+
+Ndepend can be used in different ways: to _see_ how is the software, to _see_ how the developers are improving (and if it's relevant to do so: cf. ROI), to request the developers to reach a certain quality standard (quality gates), is can be used to improve the architecture and the code crafting, and the multiple documents creation and exportation are useful for enterprise communication.
 
 Ndepend's audience is definitely middle-senior, lead, architects, as well as more business close people.
 
@@ -149,6 +154,8 @@ The one wicked ~~missing~~ coming feature is to be able to ask to Ndepend to (gu
 Or Real-time and local metrics updates. Let's say I'm working on a specific type or function. I'm might find useful to have real-time updated metrics about my code and its integration with the rest of the project. Hence I would have local metrics about the code just written, in the context of more global metrics. That would be funny, and closer to the writter than to the architect; which make sense since the trend is to have scrum practices and flatter responsibilities and hierarchy.
 
 ### Market place of rules and code crafting
+
+Ndepend possibilities a humongous and eventually we can get lost with the different metrics, their combination and their presentation. [Ndepend's documentation](https://www.ndepend.com/docs/getting-started-with-ndepend) is definitely a place to start, but a digested experience and choices might be interesting.
 
 There are many existing rules and we can tune them, add new ones indeed. But:
 
