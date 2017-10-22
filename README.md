@@ -56,7 +56,7 @@ Some of those rules (naming convention, code coverage) are managed by VS or Resh
 
 c# is amazing. [LINQ](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries) is amazing. [CQLINQ](https://www.ndepend.com/default-rules/webframe.html) is amazing.
 
-c# is an amazing language to read, write and craft, for the sake of the language, but also thanks to the ecosystem: IDEs, libraries, [SO](https://stackoverflow.com/questions/tagged/c%23) (stack overflow), support, the compiler [Roslyn](https://github.com/dotnet/roslyn) being open source. c# is amazing. LINQ is ~~amazing~~ powerful: we write queries on program objects. The core of Ndepend is to do LINQ our code (rules) and to have a GUI over that to present the results, which can be instantaneous as well as dynamic, ie, how those metrics evolve in time, as trends as we code.
+c# is an amazing language to read, write and craft, for the sake of the language, but also thanks to the ecosystem: IDEs, libraries, [SO](https://stackoverflow.com/questions/tagged/c%23) (stack overflow), support, the compiler [Roslyn](https://github.com/dotnet/roslyn) being open source. c# is amazing. LINQ is ~~amazing~~ powerful: we write queries on program objects. The core of Ndepend is to do LINQ our code ie., CQLINQ, and provides GUI over that to present the results, which can be instantaneous as well as dynamic, ie, how those metrics evolve in time, as trends as we code.
 
 Ndepend is totally transparent about the requests (rules, quality gates and issues), which can be modified according to our needs and tastes, which are explained: Ndepend provides **description** of the rule and **how to fix**.
 
@@ -91,15 +91,22 @@ TOTAL: 3 clicks to reach the code from dashboard. Clear, simple, quick, efficien
 
 It is also possible to build analysis and report (html) in 1 click, which is relevant for distant communication. This html report comes with embeded dependency matrix, treemap, abstractness vs. instability and dependency graph.
 
-
 ## Ndepend for business
 
-Ndepend is an excellent tool for engineers and architect, to know where we are, and provides human and business metrics, such as technical debt and interest (quoting Ndepend's [doc](https://www.ndepend.com/docs/technical-debt)):
+Ndepend is an excellent tool for engineers and architects, so they know where we are, and provides human and business metrics, such as technical debt and interest, quoting Ndepend's [doc](https://www.ndepend.com/docs/technical-debt):
 
 * The technical-debt is the estimated man-time that would take to fix the issue.
 * The annual-interest is the estimated man-time consumed per year if the issue is left unfixed. This provides an estimate of the business impact of the issue.
 
-In my case, the real time I needed to solve the issues was much smaller than the debt thant was presented. Though we can adjust how those are computed. I wish there were some semi-automatic way to adjust the computed debt to the code crafter behind.
+In my case, the real time I needed to solve the issues was much smaller than the debt thant was presented. Though we can adjust how those are computed I wish there were some semi-automatic way (ie., with simple machine learning or regression) to adjust the computed debt to the code crafter behind.
+
+## Conclusion
+
+Ndepend is very powerful, very much customizable, and very much lightweight unlike resharper, which is appreciable. The UI has recently improved, but requires some time to learn what we need and how to use it, but Ndepend's website is clear and full featured, as well as its Pluralsight formation for a quickstart.
+
+Potential of Ndepend is quite huge, and it will require some time and practice to get the best of it.
+
+I believe that the biggest expectable next feature of Ndepend is (guided, semi)automation of code refactoring, which would be extremely exciting.
 
 ## Ideas of future evolution of Ndepend
 
