@@ -28,7 +28,7 @@ Ndepend's operators are LINQ requests over the code: [CQLINQ](https://www.ndepen
 
 Ndepend is quite rich and has many already implemented **rules**, **quality gates**, and **issues**. Those rules are extremely readable and totally transparent: they are open source, they are commented and explained, they can be changed, eg., to match our interpretation of **too big**, and _we can implement new ones_ !
 
- Among default metrics we have:
+ Among [rules and metrics](https://www.ndepend.com/default-rules/webframe.html) we have:
 
 * quality gates
 * hotspots
@@ -48,9 +48,9 @@ Ndepend is quite rich and has many already implemented **rules**, **quality gate
 * custom rules
 * ...
 
-Some of those rules are managed by VS or Resharper, most of them aren't.
+Some of those rules (naming convention, code coverage) are managed by VS or Resharper, most of them aren't.
 
- In version 2017.2 there was many "false positives", and it was corrected in 2017.3, but actually all those metrics, thresholds are kind of personnal and depend on your style, organization needs, and so on.
+ In version 2017.2 there was many "false positives", and it was adjusted in 2017.3, but actually all those metrics, thresholds are kind of personnal and depend on your style, your organization needs, and so on.
 
 ## How does Ndepend work ? Ndepend's core is to linq the code: CQLINQ
 
