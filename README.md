@@ -114,7 +114,7 @@ Ndepend is very powerful, very much customizable, and very much lightweight unli
 
 Potential of Ndepend is quite huge, and it will require some time and practice to get the best of it.
 
-I believe that the biggest expectable next feature of Ndepend is (guided, semi)automation of code refactoring, which would be an extremely exciting evolution of Ndepend.
+I believe that the biggest expectable next feature of Ndepend is (guided, semi) automation of code refactoring, which would be an extremely exciting evolution of Ndepend.
 
 ## Ideas of future evolution of Ndepend
 
@@ -148,4 +148,4 @@ Having a small set of custom rules, coming from users and Ndepend, might be usef
 
 #### Who am I
 
-I'm graduate student, double major in theoretical physics and pure mathematics, and software engineer, essentially into research in foundations of mathematics, of artificial intelligence and artificial understanding.
+I'm graduate student, double major in theoretical physics and pure mathematics, and software engineer, essentially into research in foundations of mathematics, artificial intelligence and artificial understanding.
