@@ -167,7 +167,7 @@ There are many existing rules and we can tune them, add new ones indeed. But:
 
 Having a small set of custom rules, coming from users and Ndepend, might be useful to have quick start, since Ndepend needs to be learnt in some extends before expressing its power. Not having those and developing a feeling for those comes with experience and *avoir du métier*.
 
-At last, when engineering becomes heavy, I can imagine bigger teams/projects setting up strategies, and cost/time management in the game, and Ndepend is definitely providing useful tools here, to measure, report, prioritize TODOs, do and do not. Can there be any digested strategies about this ? I think so. Money behind can be big, which can mean growth or end of ~~ file ~~ business. Just take a look a compagnies using Ndepend, or compagnies that failed because of lack of refactoring, maintenance.
+At last, when engineering becomes heavy, I can imagine bigger teams/projects setting up strategies, and cost/time management in the game, and Ndepend is definitely providing useful tools here, to measure, report, prioritize TODOs, do and do not. Can there be any digested strategies about this ? I think so. Money behind can be big, which can mean growth or end of ~~file~~ business. Just take a look a compagnies using Ndepend, or compagnies that failed because of lack of refactoring, maintenance.
 
 #### Who am I
 
