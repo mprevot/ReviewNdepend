@@ -4,6 +4,8 @@
 
 Ndepend provides CQLINQ ie., LINQ requests on c# code to give open, editable, documented, customizable metrics, and presents them in differents ways (graphs, matrix, tree list) so the developer, architect, have instantaneous insight of the code qualities and their trends, so they know how well a software is being implemented. Metrics come with human engineering metrics: debts and interests. Ndepends goes way beyond refactoring and is the most complete featured static code analyst on the market today.
 
+Here I won't review all features of Ndepend, but attempt to get the essence of Ndepend and bolden its qualities and flaws in the context of the development of a certain software.
+
 ### Context
 
 After using Visual studio enterprise (VS) and Resharper (R#) on c# programs a while, following design patterns such as [**MVVM**](https://msdn.microsoft.com/en-us/magazine/dd419663.aspx), [**DI**](https://stackoverflow.com/questions/130794/what-is-dependency-injection), we might want to have a more precise overview of the application being developed. But not Visual studio enterprise nor Resharper can give any significant, relevant view on the code and what it does, and how well, how ideas are organized, etc.
@@ -108,11 +110,11 @@ In my case, the real time I needed to solve the issues was much smaller than the
 
 ## Conclusion
 
-Ndepend is very powerful, very much customizable, and very much lightweight unlike resharper, which is appreciable. The UI has recently improved, but requires some time to learn what we need and how to use it, but Ndepend's website is clear and full featured, as well as its Pluralsight formation for a quickstart.
+Ndepend is very powerful, very much customizable, and very much lightweight unlike resharper, which is appreciable. The UI has recently improved, though Ndepend requires some time to learn what we need and how to use it, hopefully Ndepend's website is clear and full featured, as well as its Pluralsight formation that I recommend for a quickstart.
 
 Potential of Ndepend is quite huge, and it will require some time and practice to get the best of it.
 
-I believe that the biggest expectable next feature of Ndepend is (guided, semi)automation of code refactoring, which would be extremely exciting.
+I believe that the biggest expectable next feature of Ndepend is (guided, semi)automation of code refactoring, which would be an extremely exciting evolution of Ndepend.
 
 ## Ideas of future evolution of Ndepend
 
