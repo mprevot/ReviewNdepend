@@ -56,7 +56,7 @@ Some of those rules (naming convention, code coverage) are managed by VS or Resh
 
 c# is amazing. [LINQ](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries) is amazing. [CQLINQ](https://www.ndepend.com/default-rules/webframe.html) is amazing.
 
-c# is an amazing language to read, write and craft, for the sake of the language, but also thanks to the ecosystem: IDEs, libraries, [SO](https://stackoverflow.com/questions/tagged/c%23) (stack overflow), support, the compiler [Roslyn](https://github.com/dotnet/roslyn) being open source. c# is amazing. Linq is amazing: well written, flexible, simple and extremely powerful. The core of Ndepend is to do Linq over our code (rules) and to have a GUI over that to present the results, which can be instantaneous as well as dynamic, ie, how those metrics evolve in time, as trends as we code.
+c# is an amazing language to read, write and craft, for the sake of the language, but also thanks to the ecosystem: IDEs, libraries, [SO](https://stackoverflow.com/questions/tagged/c%23) (stack overflow), support, the compiler [Roslyn](https://github.com/dotnet/roslyn) being open source. c# is amazing. LINQ is amazing: we write queries on program objets. The core of Ndepend is to do LINQ our code (rules) and to have a GUI over that to present the results, which can be instantaneous as well as dynamic, ie, how those metrics evolve in time, as trends as we code.
 
 Ndepend is totally transparent about the requests (rules, quality gates and issues), which can be modified according to our needs and tastes, which are explained: Ndepend provides **description** of the rule and **how to fix**.
 
@@ -70,12 +70,36 @@ Let's see an example of updated rule as we type:
 
 ![CQLINQ result as we type](images/CQLINQ3crop.gif)
 
+## User experience
+
+The user experience is satisfying and perfectible, and improved from 2017.2 to 2017.3. In particular there are context help that can be inspiring.
+
+Ndepend is not really a plug and play plugin, it requires some learning from the engineer in order to know what can be asked, and how to take advantage of the metrics and their presentations. The library of rules is extensive and a lot can be learnt in terms of code crafting.
+
+I was definitely not using all the metrics, and a selection might need to be done. I found that (especially with many 2017.2 false positives) actually it might be interesting to be able to share sets of custom rules, depending on style, kind of project, and design requirements.
+
+In a nutshell, what is the experience ?
+
+* build the project
+* ask for Ndepend dashboard and run analysis (1)
+* pick issues / rules / quality gates and explore them (2)
+* reach the faulty class / method directly from (3)
+
+[UXUI](images/UXUItagged.jpg)
+
+TOTAL: 3 clicks to reach the code from dashboard. Clear, simple, quick, efficient.
+
+It is also possible to build analysis and report (html) in 1 click, which is relevant for distant communication. This html report comes with embeded dependency matrix, treemap, abstractness vs. instability and dependency graph.
 
 
-## The analysis power of Ndepend
+## Ndepend for business
 
+Ndepend is an excellent tool for engineers and architect, to know where we are, and provides human and business metrics, such as technical debt and interest (quoting Ndepend's [doc](https://www.ndepend.com/docs/technical-debt)):
 
+* The technical-debt is the estimated man-time that would take to fix the issue.
+* The annual-interest is the estimated man-time consumed per year if the issue is left unfixed. This provides an estimate of the business impact of the issue.
 
+In my case, the real time I needed to solve the issues was much smaller than the debt thant was presented. Though we can adjust how those are computed. I wish there were some semi-automatic way to adjust the computed debt to the code crafter behind.
 
 ## Ideas of future evolution of Ndepend
 
