@@ -129,8 +129,6 @@ Ndepend is an excellent tool for engineers and architects, so they know where we
 
 In my case, the actual real time I needed to solve the issues was much smaller than the debt that was presented. Though we can adjust how those are computed I wish there were some semi-automatic way (ie., with simple machine learning or regression) to adjust the computed debt to the code crafter behind.
 
-https://blog.ndepend.com/prioritize-bugs/
-
 ## Conclusion
 
 To answer to my inital question, I concluded that my ViewModel class was fine with its many methods, but it would be improved by decoupling even more certain features that deserved to be part of another class, and using a container would be the best design. And I would remove responsabilities from the ViewModel at the same time. There was no way I could see that with only VS and Resharper.
@@ -143,7 +141,7 @@ Ndepend can be used in different ways: to _see_ the health of the software and o
 
 Ndepend's audience is definitely middle-senior, lead, architects, as well as more business close people.
 
-Ndepend is definitely a companion to-have for a full range positions of software centric businesses, with metrics ranging from code-close metrics to management / time / money / business metrics, the diversity of presentations of those metrics.
+Ndepend is definitely a companion to-have for a full range of positions of software centric businesses, with metrics ranging from code-close metrics to management / time / money / business metrics, the diversity of presentations of those metrics.
 
 ## Ideas of future evolution of Ndepend
 
@@ -168,6 +166,16 @@ There are many existing rules and we can tune them, add new ones indeed. But:
 Having a small set of custom rules, coming from users and Ndepend, might be useful to have quick start, since Ndepend needs to be learnt in some extends before expressing its power. Not having those and developing a feeling for those comes with experience and *avoir du métier*.
 
 At last, when engineering becomes heavy, I can imagine bigger teams/projects setting up strategies, and cost/time management in the game, and Ndepend is definitely providing useful tools here, to measure, report, prioritize TODOs, do and do not. Can there be any digested strategies about this ? I think so. Money behind can be big, which can mean growth or end of ~~file~~ business. Just take a look a compagnies using Ndepend, or compagnies that failed because of lack of refactoring and maintenance.
+
+#### Further reading
+
+[prioritize bugs](https://blog.ndepend.com/prioritize-bugs/)
+
+[decoupling legacy code using ndepend](https://nrkbeta.no/2016/01/12/decoupling-legacy-code-using-ndepend/)
+
+[getting rid of technical debt](https://chrisseroka.wordpress.com/2013/12/18/getting-rid-of-technical-debt/)
+
+[Refactoring](https://refactoring.com/), [Martin Fowler](https://martinfowler.com/)
 
 #### Who am I
 
