@@ -105,6 +105,18 @@ It is also possible to build analysis and report (html) in 1 click, which is rel
 
 Ndepend can be used outside VS with its own UI, and have a flavour for build machines.
 
+The presentations that were the most useful to me were the **rule match tree** (in the previous image: (3)), the **dependency graph** which can be reached directly from the rule match tree:
+
+![Dependency graph, hovering different types](images/DependencyGraph.gif)
+
+where box size and edge thickness can be related to a certain metric such as cyclomatic complexity, LOC, IL LOC, or number of {methods, types, members, fields, ...}.
+
+The **code metrics view** is useful to explore the code metrics, using colors, colored thresholds, box sizes, since it is interactive. For instance I find quickly my monster dummy dirty methods (which could deserve to have several lines in a submethod), and then the following ones:
+
+![Code metrics view](images/CodeMetricsView.jpg)
+
+
+
 ## Ndepend for business
 
 Ndepend is an excellent tool for engineers and architects, so they know where we are, and provides human and business metrics, such as technical debt and interest, quoting Ndepend's [doc](https://www.ndepend.com/docs/technical-debt):
