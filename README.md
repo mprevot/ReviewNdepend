@@ -24,7 +24,7 @@ The core of an enterprise is to solve a problem with social impact. What does Nd
 
 When it is hard to have immediate vision of the quality of all the code, or at least a vision of the code in its context (not the code written, but the code in its usage in the program), when we need to see the code from a certain point of view, through a certain filter, here comes the need of Ndepend, as static code analyser to understand better differents aspects of the program, and have quite specific requests about the code, and all that come with an **estimation of debt** (in engineering time), and **interest**.
 
-The best analogy I have about what Ndepends does is **operators** in quantum physics, which correspond to **observables**: we have a complex object which is "totally described" by a wave function, but this wave function doesn't give us a proper feeling about what is happening to the quantum object (atom, molecule ...). What do we do ? we apply an operator to get a measure about a certain aspect of the quantum object (~ program), and this measure (eg, energy) is experimentally verifiable, and it means something for the human. We don't know anything else, and we don't need anything else. The difference is that Ndepend doesn't change the state of our program.
+The best analogy I have about what Ndepends does is **operators** in quantum physics, which correspond to **observables**: we have a complex object which is "totally described" by a wave function, but this wave function doesn't give us a proper feeling about what is happening to the quantum object (atom, molecule ...). What do we do ? We apply an operator to get a measure about a certain aspect of the quantum object (~ program), and this measure (eg, energy) is experimentally verifiable, and it means something for the human. We don't know anything else, and we don't need anything else. The difference is that Ndepend doesn't change the state of our program.
 
 Ndepend's operators are LINQ requests over the code: [CQLINQ](https://www.ndepend.com/default-rules/webframe.html).
 
@@ -52,7 +52,7 @@ Ndepend is quite rich and has many already implemented **rules**, **quality gate
 
 Some of those rules (naming convention, code coverage) are managed by VS or Resharper, most of them aren't.
 
- In version 2017.2 there was many "false positives", and it was adjusted in 2017.3, but actually all those metrics, thresholds are kind of personnal and depend on your style, your organization needs, and so on.
+ In version 2017.2 there was many "false positives", and it was adjusted in 2017.3, but actually all those metrics, thresholds are kind of personal and depend on your style, your organization needs, and so on.
 
 ## How does Ndepend work ? Ndepend's core is to linq the code: CQLINQ
 
@@ -74,7 +74,7 @@ Let's see an example of updated rule as we type:
 
 ### Adjustments
 
-Some rules can be adjusted, quantitative ones, to match personnal/organization style and needs. Some rules were not actually relevant, at lesst in my case, eg., empty interfaces, which weren't recommended to be used empty: they were asked to be used as concrete contracts; however in my case I use empty interfaces for Prism implementation, empty interfaces which allow some useful abstraction on types, and categories changes, in that case for DI purposes.
+Some rules can be adjusted, quantitative ones, to match personal/organization style and needs. Some rules were not actually relevant, at least in my case, eg., empty interfaces, which weren't recommended to be used empty: they were asked to be used as concrete contracts; however in my case I use empty interfaces for Prism implementation, empty interfaces which allow some useful abstraction on types, and categories changes, in that case for DI purposes.
 
 I adjusted several rules in Ndepend 2017.2 to match my needs, but the set of selected rules weren't remembered. Which was corrected in the following release, 2017.3.
 
