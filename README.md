@@ -2,7 +2,7 @@
 
 ### Abstract
 
-Ndepend provides CQLINQ ie., LINQ requests on c# code to give open, editable, documented, customizable metrics, and presents them in differents ways (graphs, matrix, tree list) so the developer, architect, have instantaneous insight of the code qualities and their trends, so they know how well a software is being implemented. Metrics come with human engineering metrics: debts and interests. Ndepends goes way beyond refactoring and is the most complete featured static code analyst on the market today.
+Ndepend provides CQLINQ ie., LINQ requests on c# code to give open, editable, documented, customizable metrics, and presents them in different ways (graphs, matrix, tree list) so the developer, architect, have instantaneous insight of the code qualities and their trends, so they know how well a software is being implemented. Metrics come with human engineering metrics: debts and interests. Ndepends goes way beyond refactoring and is the most complete featured static code analyst on the market today.
 
 Here I won't review all features of Ndepend, but attempt to get the essence of Ndepend and bolden its qualities and flaws in the context of the development of a certain software.
 
@@ -10,19 +10,19 @@ Here I won't review all features of Ndepend, but attempt to get the essence of N
 
 After using Visual studio enterprise (VS) and Resharper (R#) on c# programs a while, following design patterns such as [**MVVM**](https://msdn.microsoft.com/en-us/magazine/dd419663.aspx), [**DI**](https://stackoverflow.com/questions/130794/what-is-dependency-injection), we might want to have a more precise overview of the application being developed. But not Visual studio enterprise nor Resharper can give any significant, relevant view on the code and what it does, and how well, how ideas are organized, etc.
 
-I have a medium-big sized progam involving both [**computer vision**](http://news.mit.edu/topic/computer-vision) and **realtime image/video editing**; it involves c#, c++, matlab, [MKL](https://software.intel.com/en-us/mkl), [cuda](https://developer.nvidia.com/cuda-faq) code, but most of it is **c#**; it has about 10k LOCs, has a computing part and a graphical user interface (GUI) part, the latter involving **WPF**, it has **MVVM** pattern, and uses [**Prism**](https://github.com/PrismLibrary/Prism) and [**Unity**](https://msdn.microsoft.com/en-us/library/dn223671(v=pandp.30).aspx) for **DI** patterns; it has unit tests, even though it's not [**TDD**](http://agiledata.org/essays/tdd.html); it has metrics for performance measurements in many critical places.
+I have a medium-big-sized progam involving both [**computer vision**](http://news.mit.edu/topic/computer-vision) and **realtime image/video editing**; it involves c#, c++, matlab, [MKL](https://software.intel.com/en-us/mkl), [cuda](https://developer.nvidia.com/cuda-faq) code, but most of it is **c#**; it has about 10k LOCs, has a computing part and a graphical user interface (GUI) part, the latter involving **WPF**, it has **MVVM** pattern, and uses [**Prism**](https://github.com/PrismLibrary/Prism) and [**Unity**](https://msdn.microsoft.com/en-us/library/dn223671(v=pandp.30).aspx) for **DI** patterns; it has unit tests, even though it's not [**TDD**](http://agiledata.org/essays/tdd.html); it has metrics for performance measurements in many critical places.
 
 I often have the practice of having everything in mind and then I write code. In other words, I have the global ideas and architecture in mind as I code and craft my local ideas. With such a project, I needed some time to just have the global feeling back again (and yes, I was sometimes having hard times reading my own code after being awhile AFK). Hum. Not that good, but I have no means to know if it was me or my implementation.
 
-I have a quite big **ViewModel** class, which is classical, with implementation in several files (partial public class), for different aspects.
+I have quite a big **ViewModel** class, which is classical, with implementation in several files (partial public class), for different aspects.
 
-Questions: is having a big class (big: many fields, many methods) a code smell despite I'm following the MVVM pattern ? do I have ways to know better my code qualities and problems ?
+Questions: is having a big class (big: many fields, many methods) a code smell despite I'm following the MVVM pattern ? Do I have ways to know better my code qualities and problems ?
 
 ## Why and when Ndepends ? Ndepends gives qualitative eyes
 
-The core of an enterprise is to solve a problem with social impact. What does Ndepend solve ? Its gives instant qualitative eyes on code without the need to read the code (what ever its size), and this helps to improve code quality as well as architecture, engireeing practices and monitor its evolution. This works just in time and through remembering metrics, we can get trends.
+The core of an enterprise is to solve a problem with social impact. What does Ndepend solve ? It gives instant qualitative eyes on code without the need to read the code (whatever its size), and this helps to improve code quality as well as architecture, engineering practices and monitor its evolution. This works just in time and through remembering metrics, we can get trends.
 
-When it is hard to have immediate vision of the quality of all the code, or at least a vision of the code in its context (not the code written, but the code in its usage in the program), when we need to see the code from a certain point of view, through a certain filter, here comes the need of Ndepend, as static code analyser to understand better differents aspects of the program, and have quite specific requests about the code, and all that come with an **estimation of debt** (in engineering time), and **interest**.
+When it is hard to have immediate vision of the quality of the entire code, or at least a vision of the code in its context (not the code written, but the code in its usage in the program), when we need to see the code from a certain point of view, through a certain filter, here comes the need of Ndepend, as static code analyser to understand better different aspects of the program, and have quite specific requests about the code, and all that come with an **estimation of debt** (in engineering time), and **interest**.
 
 The best analogy I have about what Ndepends does is **operators** in quantum physics, which correspond to **observables**: we have a complex object which is "totally described" by a wave function, but this wave function doesn't give us a proper feeling about what is happening to the quantum object (atom, molecule ...). What do we do ? We apply an operator to get a measure about a certain aspect of the quantum object (~ program), and this measure (eg, energy) is experimentally verifiable, and it means something for the human. We don't know anything else, and we don't need anything else. The difference is that Ndepend doesn't change the state of our program.
 
@@ -80,11 +80,11 @@ I adjusted several rules in Ndepend 2017.2 to match my needs, but the set of sel
 
 ## User experience
 
-The user experience is satisfying and perfectible, and improved from 2017.2 to 2017.3. In particular there are context help that can be inspiring.
+The user experience is satisfying and perfectible, and improved from 2017.2 to 2017.3. In particular there is context help that can be inspiring.
 
-Ndepend is not really a plug and play plugin, it requires some learning from the engineer in order to know what can be asked, and how to take advantage of the metrics and their presentations. The library of rules is extensive and a lot can be learnt in terms of code crafting.
+Ndepend is not really a plug and play plugin, it requires some learning from the engineer in order to know what can be asked, and how to take advantage of the metrics and their presentations. The library of rules is extensive and a lot can be learnt in terms of the code crafting.
 
-I was definitely not using all the metrics, and a selection might need to be done. I found that (especially with many 2017.2 false positives) actually it might be interesting to be able to share sets of custom rules, depending on style, kind of project, and design requirements.
+I was definitely not using all the metrics, and a selection might need to be done. I found that (especially with many 2017.2 false positives) actually it might be interesting to be able to share sets of custom rules, depending on style, kind of project, and design requirements, in a market place or something. I'll come back to that later. 
 
 In a nutshell, what is the experience ?
 
@@ -106,7 +106,7 @@ Ndepend is an excellent tool for engineers and architects, so they know where we
 * The technical-debt is the estimated man-time that would take to fix the issue.
 * The annual-interest is the estimated man-time consumed per year if the issue is left unfixed. This provides an estimate of the business impact of the issue.
 
-In my case, the real time I needed to solve the issues was much smaller than the debt thant was presented. Though we can adjust how those are computed I wish there were some semi-automatic way (ie., with simple machine learning or regression) to adjust the computed debt to the code crafter behind.
+In my case, the actual real time I needed to solve the issues was much smaller than the debt that was presented. Though we can adjust how those are computed I wish there were some semi-automatic way (ie., with simple machine learning or regression) to adjust the computed debt to the code crafter behind.
 
 ## Conclusion
 
@@ -124,9 +124,9 @@ I would love to be able to ask to Ndepend to (semi-)automatically refactor my co
 
 The power of Resharper is to be present to the developer as we write the code.
 
-### Realtime local metrics
+### Real-time local metrics
 
-Let's say I'm working on a specific type or function. I'm might find useful to have realtime updated metrics about my code and its integration with the rest of the project. Hence I would have local metrics about the just written code, in the context of more global metrics. That would be funny, and closer to the writter than to the architect; which make sense since the trend is to have scrum practices and flatter responsabilities and hierarchy.
+Let's say I'm working on a specific type or function. I'm might find useful to have real-time updated metrics about my code and its integration with the rest of the project. Hence I would have local metrics about the just written code, in the context of more global metrics. That would be funny, and closer to the writter than to the architect; which make sense since the trend is to have scrum practices and flatter responsibilities and hierarchy.
 
 ### More interactivity
 
@@ -148,4 +148,4 @@ Having a small set of custom rules, coming from users and Ndepend, might be usef
 
 #### Who am I
 
-I'm graduate student, double major in theoretical physics and pure mathematics, and software engineer, essentially into research in foundations of mathematics, artificial intelligence and artificial understanding.
+I am a graduate student, double major in theoretical physics and pure mathematics, and software engineer, essentially into research in foundations of mathematics, artificial intelligence and artificial understanding.
