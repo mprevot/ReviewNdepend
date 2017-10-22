@@ -144,5 +144,6 @@ There are many existing rules and we can tune them, add new ones indeed. But:
 
 Having a small set of custom rules, coming from users and Ndepend, might be useful to have quick start, since Ndepend needs to be learnt before expressing its power.
 
+#### Who am I
 
-
+I'm theoretical physicist, pure mathematician (graduate student, double major), and software engineer, essentially into research in foundations of artificial intelligence and artificial understanding.
