@@ -1,5 +1,11 @@
 # Review: Ndepend 2017.3
 
+### Abstract
+
+Ndepend provides CQLINQ ie., LINQ requests on c# code to give open, editable, documented, customizable metrics, and presents them in differents ways (graphs, matrix, tree list) so the developer, architect, have instantaneous insight of the code qualities and their trends, so they know how well a software is being implemented. Metrics come with human engineering metrics: debts and interests. Ndepends goes way beyond refactoring and is the most complete featured static code analyst on the market today.
+
+### Context
+
 After using Visual studio enterprise (VS) and Resharper (R#) on c# programs a while, following design patterns such as [**MVVM**](https://msdn.microsoft.com/en-us/magazine/dd419663.aspx), [**DI**](https://stackoverflow.com/questions/130794/what-is-dependency-injection), we might want to have a more precise overview of the application being developed. But not Visual studio enterprise nor Resharper can give any significant, relevant view on the code and what it does, and how well, how ideas are organized, etc.
 
 I have a medium - big sized progam involving both [**computer vision**](http://news.mit.edu/topic/computer-vision) and **realtime image/video editing**; it involves c#, c++, matlab, [MKL](https://software.intel.com/en-us/mkl), [cuda](https://developer.nvidia.com/cuda-faq) code, but most of it is **c#**; it has about 10k LOCs, has a computing part and a graphical user interface (GUI) part, it has **MVVM** pattern, and uses [**Prism**](https://github.com/PrismLibrary/Prism) and [**Unity**](https://msdn.microsoft.com/en-us/library/dn223671(v=pandp.30).aspx) for **DI** patterns; it has unit tests, even though it's not [**TDD**](http://agiledata.org/essays/tdd.html); it has metrics for performance measurements in many critical places.
@@ -8,19 +14,41 @@ I often have the practice of having everything in mind and then I write code. In
 
 I have a quite big **ViewModel** class, which is classical, with implementation in several files (partial public class), for different aspects.
 
-Question: is having a big class (big: many fields, many methods) a code smell despite I'm following the MVVM pattern ?
+Questions: is having a big class (big: many fields, many methods) a code smell despite I'm following the MVVM pattern ? do I have ways to know better my code qualities and problems ?
 
 ## Why and when Ndepends ? Ndepends gives qualitative eyes
 
-The core of an enterprise is to solve a problem. What does Ndepend solves ? Its gives instant qualitative eyes on code without the need to read the code (what ever its size), and this helps to improve code quality as well as architecture.
+The core of an enterprise is to solve a problem with social impact. What does Ndepend solves ? Its gives instant qualitative eyes on code without the need to read the code (what ever its size), and this helps to improve code quality as well as architecture, engireeing practices and monitor its evolution. This works just in time and through remembering metrics, we can get trends.
 
-When it is hard to have immediate vision of the quality of all the code, or at least a vision of the code in its context (not the code written, but the code in its usage in the program), when we need to see the code from a certain point of view, through a certain filter, here comes the need of Ndepend, as static code analyser to understand better differents aspects of the program, and have quite specific requests about the code.
+When it is hard to have immediate vision of the quality of all the code, or at least a vision of the code in its context (not the code written, but the code in its usage in the program), when we need to see the code from a certain point of view, through a certain filter, here comes the need of Ndepend, as static code analyser to understand better differents aspects of the program, and have quite specific requests about the code, and all that come with an **estimation of debt** (in engineering time), and **interest**.
 
 The best analogy I have about what Ndepends does is **operators** in quantum physics, which correspond to **observables**: we have a complex object which is "totally described" by a wave function, but this wave function doesn't give us a proper feeling about what is happening to the quantum object (atom, molecule ...). What do we do ? we apply an operator to get a measure about a certain aspect of the quantum object (~ program), and this measure (eg, energy) is experimentally verifiable, and it means something for the human. We don't know anything else, and we don't need anything else. The difference is that Ndepend doesn't change the state of our program.
 
 Ndepend's operators are LINQ requests over the code: [CQLINQ](https://www.ndepend.com/default-rules/webframe.html).
 
 Ndepend is quite rich and has many already implemented **rules**, **quality gates**, and **issues**. Those rules are extremely readable and totally transparent: they are open source, they are commented and explained, they can be changed, eg., to match our interpretation of **too big**, and _we can implement new ones_ !
+
+ Among default metrics we have:
+
+* quality gates
+* hotspots
+* code smells
+* code smells regressions
+* object oriented design
+* design
+* architecture
+* API breaking changes
+* code coverage
+* dead code
+* visibility
+* immutability
+* naming convention
+* defining Just my code
+* trend metrics
+* custom rules
+* ...
+
+Some of those rules are managed by VS or Resharper, most of them aren't.
 
  In version 2017.2 there was many "false positives", and it was corrected in 2017.3, but actually all those metrics, thresholds are kind of personnal and depend on your style, organization needs, and so on.
 
@@ -36,9 +64,13 @@ Let's have here an example, a code smell rule called "Avoid types with too many 
 
 ![linq rules](images/linqrules.jpg "example of a rule in linq")
 
-One neat thing about the editing of CQLINQ is that there is intellisense for the query AND we got the result of the query being constructed as we type. This is really helpful to craft a rule, since this is definitely an empirical art.
+One neat thing about the editing of CQLINQ is that there is intellisense for the query AND we got the result of the query being constructed as we type. This is really helpful to craft a rule, since this is definitely empirical.
+
+Let's see an example of updated rule as we type:
 
 ![CQLINQ result as we type](images/CQLINQ3crop.gif)
+
+
 
 ## The analysis power of Ndepend
 
