@@ -86,7 +86,7 @@ In the end, I adjusted several rules in Ndepend 2017.2 to match my needs.
 
 ## User experience
 
-The user experience is satisfying and perfectible, and improved from 2017.2 to 2017.3. I appreciate in particular there is context help that can be inspiring.
+The user experience is satisfying and perfectible, and improved from 2017.2 to 2017.3. I appreciate in particular there is context help that can be inspiring for the beginner.
 
 Ndepend is not really a plug and play plugin, it requires some learning from the engineer in order to know what can be asked, and how to take advantage of the metrics and their presentations. The library of rules is extensive and a lot can be learnt in terms of the code crafting.
 
