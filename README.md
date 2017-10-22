@@ -85,7 +85,7 @@ In a nutshell, what is the experience ?
 * pick issues / rules / quality gates and explore them (2)
 * reach the faulty class / method directly from (3)
 
-[UXUI](images/UXUItagged.jpg)
+![UXUI](images/UXUItagged.jpg)
 
 TOTAL: 3 clicks to reach the code from dashboard. Clear, simple, quick, efficient.
 
