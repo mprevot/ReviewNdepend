@@ -70,7 +70,7 @@ One neat thing about the editing of CQLINQ is that there is intellisense for the
 
 Let's see an example of updated rule as we type:
 
-![CQLINQ result as we type](images/CQLINQ3crop.gif)
+![CQLINQ result as we type](images/CQLINQ8crop.gif)
 
 ### Adjustments
 
